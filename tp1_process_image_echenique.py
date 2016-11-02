@@ -1,5 +1,22 @@
 #!/usr/bin/env python
 
+##############################################################
+##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~##
+##															##
+##	Titulo : Procesamiento de Imagenes						##
+##															##
+##	Autor : Rodolfo Echenique								##
+##															##
+##	Materia : TV Digital y Procesamiento de Imagenes		##
+##															##
+##	Carrera : Ingenieria en Telecomunicaciones				##
+##															##
+##	Año : 2016												##
+##															##
+##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~##
+##############################################################
+
+
 from PIL import Image
 import random
 
