@@ -26,7 +26,7 @@ import random
 
 def bright(image,n):
 	image = Image.open(image)
-	image.show()
+#	image.show()
 	px = image.load()
 	width, height = image.size
 	for y in range(height):
@@ -37,7 +37,7 @@ def bright(image,n):
 				pxnew.append(cambio(px[x,y][i],n))
 			px[x,y] = (pxnew[0],pxnew[1],pxnew[2])
 			tuple(px[x,y])
-	image.save("{} - {}.jpg".format(random.randrange(100),n))
+	image.save("{} - brillo - {}.jpg".format(random.randrange(100),n))
 
 def cambio(value,cambio):
 	new_value = value + cambio
@@ -54,5 +54,5 @@ def cambio(value,cambio):
 
 file = input("Ingrese la direccion de la imagen : ")
 brillo = int(input("Ingrese la cantidad de brillo que desea : "))
-bright("/home/rody/F/Archivos/ESTUDIOS/Ingenieria/tv digital/Trabajo Practico Nº1 - Procesamiento de Imagenes/01.jpg", brillo)
+bright(file, brillo)
 
